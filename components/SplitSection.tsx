@@ -73,12 +73,12 @@ function ServiceRow({ item, index }: { item: (typeof services)[0]; index: number
 /* ─── Main ──────────────────────────────────────────────────────── */
 export default function SplitSection() {
   return (
-    <section className="relative py-0 bg-gradient-to-b from-[#F0EBE2]/30 via-transparent to-[#E8E2D4]/25">
+    <section className="relative py-0">
       <div className="max-w-[1120px] mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[72fr_28fr] divide-y lg:divide-y-0 lg:divide-x divide-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-[72fr_28fr] divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
 
           {/* ── LEFT 70%: Servizi ─────────────────────────────────── */}
-          <div id="servizi" className="py-16 lg:pr-10">
+          <div id="servizi" className="py-16 lg:pr-10 bg-white">
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function SplitSection() {
           </div>
 
           {/* ── RIGHT 30%: Destinazioni ──────────────────────────── */}
-          <div id="destinazioni" className="py-16 lg:pl-10">
+          <div id="destinazioni" className="py-16 lg:pl-10 bg-slate-50">
             <motion.div
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
